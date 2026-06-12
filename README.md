@@ -1,36 +1,33 @@
 # Monitoring Analytics Dataset Generator
 
-## 📌 Objective
-Prepare monitoring dataset for analytics dashboards and reporting.
+## Overview
+This project creates a dataset for monitoring candidate activity.
 
-## 📊 Dataset Fields
-- candidate_id
-- risk_score
-- phone_events
-- session_duration
+## Data Fields
+- Candidate ID
+- Risk Score
+- Phone Events
+- Session Duration
 
-## ⚙️ Features
-- Generates synthetic monitoring data
-- Handles missing values
-- Removes duplicate candidates
-- Validates all fields
+## Project Structure
+- data/dataset.csv
+- notebook/analysis.ipynb
+- src/generate_dataset.py
+- data_dictionary.md
 
-## 📁 Project Structure
-- data/ → dataset.csv
-- src/ → dataset generator script
-- notebook/ → analytics notebook
-- data_dictionary.md → column explanation
+## Sample Data
+candidate_id,risk_score,phone_events,session_duration  
+101,65,2,35  
+102,15,0,50  
 
-## ▶️ How to Run
-python src/generate_dataset.py
+## Features
+- Handles missing values  
+- Removes duplicates  
+- Validated dataset  
 
-## 📈 Analytics
-Use notebook/analysis.ipynb for:
-- Data analysis
-- Risk distribution
-- High-risk detection
+## How to Run
+1. Install pandas  
+2. Run: python src/generate_dataset.py  
 
-## ✅ Status
-✔ Dataset ready  
-✔ Validated data  
-✔ Dashboard-ready
+## Author
+Kavya Yadav
